@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime-Number-Generator", "Prime-Number-Generator\Prime-Number-Generator.csproj", "{5BD403A7-B30A-4E33-AE97-BE0BE4BF11EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariableBase.Mathematics", "..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj", "{0EE40C75-2117-4410-987E-B9A327B2B3C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime-Number-Generator.Tests", "Prime-Number-Generator.Tests\Prime-Number-Generator.Tests.csproj", "{F6DCD25C-3933-48CC-A93C-FD6821D18E16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BD403A7-B30A-4E33-AE97-BE0BE4BF11EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD403A7-B30A-4E33-AE97-BE0BE4BF11EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD403A7-B30A-4E33-AE97-BE0BE4BF11EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD403A7-B30A-4E33-AE97-BE0BE4BF11EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE40C75-2117-4410-987E-B9A327B2B3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE40C75-2117-4410-987E-B9A327B2B3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE40C75-2117-4410-987E-B9A327B2B3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE40C75-2117-4410-987E-B9A327B2B3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC201BDB-43E8-4193-9A49-F903B357B540}
+	EndGlobalSection
+EndGlobal

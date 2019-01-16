@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Prime_Number_Generator</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj" />
+  </ItemGroup>
+
+</Project>

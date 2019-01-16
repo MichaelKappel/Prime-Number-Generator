@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs/Prime-Number-Generator/v15
+/Prime-Number-Generator.Tests/obj
+/Prime-Number-Generator/obj
+/Prime-Number-Generator/bin/Debug/netcoreapp2.1
+/Prime-Number-Generator.Tests/bin/Debug/netcoreapp2.1
