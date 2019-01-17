@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using VariableBase.Mathematics;
 
 namespace Prime_Number_Generator.Tests
 {
@@ -20,6 +21,16 @@ namespace Prime_Number_Generator.Tests
 
             var g = new PrimeNumberGenerator();
             g.HundredThousandPlaces();
+        }
+
+
+        [TestMethod]
+        public void HundredPlaces_Test()
+        {
+
+            var g = new PrimeNumberGenerator();
+            Number divisor = g.HundredPlaces();
+
         }
     }
 }

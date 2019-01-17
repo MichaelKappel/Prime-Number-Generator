@@ -23,25 +23,37 @@ namespace Prime_Number_Generator
 
             while (!testNumber.IsPrime())
             {
-                testNumber += testNumber;
+                testNumber += env.FirstNumber;
             }
 
             return testNumber;
         }
 
-        public void MillionPlaces()
+        public Number MillionPlaces()
         {
-            var worldsLargestPrime = this.Go(1000000000);
+            var prime = this.Go(1000000000);
 
-            File.WriteAllText("prime.txt", worldsLargestPrime.ToString());
+            File.WriteAllText("prime1000000000.txt", prime.ToString());
+            
+            return prime;
         }
 
-        public void HundredThousandPlaces()
+        public Number HundredThousandPlaces()
         {
-            var worldsLargestPrime = this.Go(100000000);
+            Number prime = this.Go(100000000);
 
-            File.WriteAllText("prime.txt", worldsLargestPrime.ToString());
+            File.WriteAllText("prime100000000.txt", prime.ToString());
+
+            return prime;
         }
 
+        public Number HundredPlaces()
+        {
+            Number prime = this.Go(100);
+
+            File.WriteAllText("prime100.txt", prime.ToString());
+
+            return prime;
+        }
     }
 }
