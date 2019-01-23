@@ -32,5 +32,7 @@ namespace Prime_Number_Generator.Tests
             Number divisor = g.HundredPlaces();
 
         }
+
+
     }
 }

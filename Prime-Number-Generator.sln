@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariableBase.Mathematics", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime-Number-Generator.Tests", "Prime-Number-Generator.Tests\Prime-Number-Generator.Tests.csproj", "{F6DCD25C-3933-48CC-A93C-FD6821D18E16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime-Number-Generator-Console", "Prime-Number-Generator-Console\Prime-Number-Generator-Console.csproj", "{908291A9-EEE8-4406-9788-819235787DAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6DCD25C-3933-48CC-A93C-FD6821D18E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908291A9-EEE8-4406-9788-819235787DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908291A9-EEE8-4406-9788-819235787DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908291A9-EEE8-4406-9788-819235787DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908291A9-EEE8-4406-9788-819235787DAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

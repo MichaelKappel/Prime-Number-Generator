@@ -1,0 +1,14 @@
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.deps.json
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.runtimeconfig.json
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.runtimeconfig.dev.json
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.dll
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.pdb
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\VariableBase.Mathematics.dll
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\VariableBase.Mathematics.pdb
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csproj.CoreCompileInputs.cache
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.AssemblyInfoInputs.cache
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.AssemblyInfo.cs
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csproj.CopyComplete
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.dll
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.pdb
+D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csprojAssemblyReference.cache

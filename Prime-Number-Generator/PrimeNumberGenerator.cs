@@ -10,20 +10,13 @@ namespace Prime_Number_Generator
     {
         public Number Go(Int32 minSize)
         {
-            var env = new MathEnvironment("0123456789");
+            var env = new DecimalMathEnvironment("0123456789");
 
-            var numberSegments = new Char[minSize];
-            for (var i = 0; i < minSize - 1; i++)
-            {
-                numberSegments[i] = env.Bottom;
-            }
-            numberSegments[numberSegments.Length - 1] = env.First;
-
-            var testNumber = env.GetNumber(numberSegments.ToList());
+            Number testNumber = env.GetNumber(minSize);
 
             while (!testNumber.IsPrime())
             {
-                testNumber += env.FirstNumber;
+                testNumber += env.KeyNumber[1];
             }
 
             return testNumber;
@@ -33,7 +26,7 @@ namespace Prime_Number_Generator
         {
             var prime = this.Go(1000000000);
 
-            File.WriteAllText("prime1000000000.txt", prime.ToString());
+            File.WriteAllText("../../../../prime1000000000.txt", prime.ToString());
             
             return prime;
         }
@@ -42,7 +35,7 @@ namespace Prime_Number_Generator
         {
             Number prime = this.Go(100000000);
 
-            File.WriteAllText("prime100000000.txt", prime.ToString());
+            File.WriteAllText("../../../../prime100000000.txt", prime.ToString());
 
             return prime;
         }
@@ -51,7 +44,7 @@ namespace Prime_Number_Generator
         {
             Number prime = this.Go(100);
 
-            File.WriteAllText("prime100.txt", prime.ToString());
+            File.WriteAllText("../../../../prime100.txt", prime.ToString());
 
             return prime;
         }
