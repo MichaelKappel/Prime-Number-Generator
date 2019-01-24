@@ -183,10 +183,22 @@ namespace Prime_Number_Generator_Console
                         String fibonaccisRaw = fibonaccis[fibonaccis.Count - 1];
                         String[] fibonaccisRawArray = fibonaccisRaw.Split(' ');
 
+                        Number fibonacci0 = env.GetNumber(fibonaccisRawArray[0]).Convert(env2);
                         fibonacci1 = env.GetNumber(fibonaccisRawArray[0]).Convert(env2);
                         fibonacci2 = env.GetNumber(fibonaccisRawArray[1]).Convert(env2);
+
+#if DEBUG
+                        if (fibonacci0 +  fibonacci1 != fibonacci2)
+                        {
+                            throw new Exception("fibonacci addition Error");
+                        }
+                        else if (fibonacci2 - fibonacci1 != fibonacci0)
+                        {
+                            throw new Exception("fibonacci addition Error");
+                        }
+#endif
                     }
-                    
+
                     fibonaccis.Clear();
 
                     using (StreamWriter sw = new StreamWriter(fs))
@@ -197,6 +209,12 @@ namespace Prime_Number_Generator_Console
                         {
                             startTime = DateTime.Now;
                             Number fibonacciNext = fibonacci1 + fibonacci2;
+#if DEBUG
+                            if (fibonacciNext - fibonacci1 != fibonacci2)
+                            {
+                                throw new Exception("fibonacci addition Error");
+                            }
+#endif
                             if (fibonacciNext.IsPrime())
                             {
                                 String fibonacci = String.Format("{0} {1} {2}", fibonacci1.ToString(env), fibonacci2.ToString(env), fibonacciNext.ToString(env));
@@ -208,6 +226,8 @@ namespace Prime_Number_Generator_Console
                             }
                             fibonacci1 = fibonacci2;
                             fibonacci2 = fibonacciNext;
+
+
                         }
                     }
                 }
