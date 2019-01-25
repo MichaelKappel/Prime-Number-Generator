@@ -16,7 +16,7 @@ namespace Prime_Number_Generator_Console
             Console.WriteLine("4: Fibonacci primes");
             Console.WriteLine("Other: EXIT");
 
-            var env = new DecimalMathEnvironment("0123456789");
+            var env = new CharMathEnvironment("0123456789");
 
             var command = Console.ReadLine();
             DateTime startTime;
@@ -26,7 +26,7 @@ namespace Prime_Number_Generator_Console
 
                 startTime = DateTime.Now;
 
-                var env2 = new DecimalMathEnvironment();
+                var env2 = new CharMathEnvironment();
                 Number testNumber2;
                 using (Number testNumber = env.GetNumber(Int32.Parse(rawNumberOfZeros)))
                 {
@@ -68,7 +68,7 @@ namespace Prime_Number_Generator_Console
 
                 using (FileStream fs = File.Open("../../../../primes.txt", FileMode.Append))
                 {
-                    var env2 = new DecimalMathEnvironment();
+                    var env2 = new CharMathEnvironment();
                     ((SieveOfEratosthenePrimeAlgorithm)env2.PrimeAlgorithm).SavePrimes = true;
 
                     Number testNumber2;
@@ -117,7 +117,7 @@ namespace Prime_Number_Generator_Console
 
                 using (FileStream fs = File.Open("../../../../Fibonacci.txt", FileMode.Append))
                 {
-                    var env2 = new DecimalMathEnvironment();
+                    var env2 = new CharMathEnvironment();
                     
                     if (fibonaccis.Count == 0)
                     {
@@ -154,7 +154,7 @@ namespace Prime_Number_Generator_Console
             }
             else if (command == "4")
             {
-                var env2 = new DecimalMathEnvironment();
+                var env2 = new CharMathEnvironment();
                 ((SieveOfEratosthenePrimeAlgorithm)env2.PrimeAlgorithm).SavePrimes = true;
 
                 IList<String> fibonaccis = new List<String>();

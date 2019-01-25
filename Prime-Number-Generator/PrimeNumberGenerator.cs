@@ -10,7 +10,7 @@ namespace Prime_Number_Generator
     {
         public Number Go(Int32 minSize)
         {
-            var env = new DecimalMathEnvironment("0123456789");
+            var env = new CharMathEnvironment("0123456789");
 
             Number testNumber = env.GetNumber(minSize);
 
