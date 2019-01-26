@@ -53,6 +53,7 @@ namespace Prime_Number_Generator_Console
             }
             else if (command == "2")
             {
+                var charEnvironment = new CharMathEnvironment();
 
                 IList<String> primes = new List<String>();
                 using (FileStream fs = File.Open("../../../../primes.txt", FileMode.OpenOrCreate))
@@ -66,40 +67,38 @@ namespace Prime_Number_Generator_Console
                     }
                 }
 
-                using (FileStream fs = File.Open("../../../../primes.txt", FileMode.Append))
-                {
-                    var env2 = new CharMathEnvironment();
-                    ((SieveOfEratosthenePrimeAlgorithm)env2.PrimeAlgorithm).SavePrimes = true;
+                //using (FileStream fs = File.Open("../../../../primes.txt", FileMode.Append))
+                //{
 
-                    Number testNumber2;
-                    using (Number testNumber = (primes.Count > 0) ? env.GetNumber(primes[primes.Count - 1]) : env.KeyNumber[0])
-                    {
-                        testNumber2 = testNumber.Convert(env2);
-                        testNumber2 += env2.KeyNumber[1];
-                    }
+                    Number testNumber2 = charEnvironment.KeyNumber[1];
+                    //using (Number testNumber = (primes.Count > 0) ? env.GetNumber(primes[primes.Count - 1]) : env.KeyNumber[0])
+                    //{
+                    //    testNumber2 = testNumber; //.Convert(env2);
+                    //    testNumber2 += charEnvironment.KeyNumber[1];
+                    //}
 
-                    primes.Clear();
+                    //primes.Clear();
 
-                    using (StreamWriter sw = new StreamWriter(fs))
-                    {
-                        sw.AutoFlush = true;
+                    //using (StreamWriter sw = new StreamWriter(fs))
+                    //{
+                    //    sw.AutoFlush = true;
                         Boolean stop = false;
                         while (!stop)
                         {
                             startTime = DateTime.Now;
                             if (testNumber2.IsPrime())
                             {
-                                String prime = testNumber2.ToString(env);
-                                sw.WriteLine(prime);
+                                //String prime = testNumber2.ToString(env);
+                                //sw.WriteLine(prime);
 
                                 TimeSpan span = DateTime.Now - startTime;
-                                Console.WriteLine(prime);
+                                //Console.WriteLine(prime);
                                 Console.WriteLine("Time:{0}", span);
                             }
-                            testNumber2 += env2.KeyNumber[1];
+                            testNumber2 += charEnvironment.KeyNumber[1];
                         }
-                    }
-                }
+                    //}
+                //}
             }
             else if (command == "3")
             {
@@ -155,7 +154,6 @@ namespace Prime_Number_Generator_Console
             else if (command == "4")
             {
                 var env2 = new CharMathEnvironment();
-                ((SieveOfEratosthenePrimeAlgorithm)env2.PrimeAlgorithm).SavePrimes = true;
 
                 IList<String> fibonaccis = new List<String>();
                 using (FileStream fs = File.Open("../../../../FibonacciPrime.txt", FileMode.OpenOrCreate))
