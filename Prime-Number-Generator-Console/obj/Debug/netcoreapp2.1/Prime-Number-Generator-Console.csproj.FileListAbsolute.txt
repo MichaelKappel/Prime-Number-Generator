@@ -12,3 +12,17 @@ D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreap
 D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.dll
 D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.pdb
 D:\git\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csprojAssemblyReference.cache
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.deps.json
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.runtimeconfig.json
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.runtimeconfig.dev.json
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.dll
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\Prime-Number-Generator-Console.pdb
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\VariableBase.Mathematics.dll
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\bin\Debug\netcoreapp2.1\VariableBase.Mathematics.pdb
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csprojAssemblyReference.cache
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csproj.CoreCompileInputs.cache
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.AssemblyInfoInputs.cache
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.AssemblyInfo.cs
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.csproj.CopyComplete
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.dll
+D:\Users\Micha\Documents\Prime-Number-Generator\Prime-Number-Generator-Console\obj\Debug\netcoreapp2.1\Prime-Number-Generator-Console.pdb

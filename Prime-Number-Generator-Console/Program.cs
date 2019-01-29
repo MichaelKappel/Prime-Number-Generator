@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using VariableBase.Mathematics;
 
 namespace Prime_Number_Generator_Console
@@ -67,35 +68,58 @@ namespace Prime_Number_Generator_Console
                     }
                 }
 
+                Number currentNumber;
+                if (primes.Count > 0)
+                {
+                    var x = (primes[primes.Count - 1].Split(",")).ToList();
+                    x.Reverse();
+                    currentNumber = charEnvironment.GetNumber(x.ToArray());
+                }
+                else
+                {
+                    currentNumber = charEnvironment.SecondNumber;
+                }
+
+                //String primeMax = String.Empty;
+                // using (FileStream fs = File.Open("../../../../primesMax.txt", FileMode.OpenOrCreate))
+                // {
+                //     using (StreamReader sr = new StreamReader(fs))
+                //     {
+                //         primeMax = sr.ReadToEnd().Replace("\r\n","");
+                //     }
+                // }
+
+                //Number currentNumber = charEnvironment.GetNumber("3");
+
                 //using (FileStream fs = File.Open("../../../../primes.txt", FileMode.Append))
                 //{
 
-                    Number testNumber2 = charEnvironment.KeyNumber[1];
-                    //using (Number testNumber = (primes.Count > 0) ? env.GetNumber(primes[primes.Count - 1]) : env.KeyNumber[0])
-                    //{
-                    //    testNumber2 = testNumber; //.Convert(env2);
-                    //    testNumber2 += charEnvironment.KeyNumber[1];
-                    //}
+                //Number testNumber2 = charEnvironment.KeyNumber[1];
+                //using (Number testNumber = (primes.Count > 0) ? charEnvironment.GetNumber(primes[primes.Count - 1]) : charEnvironment.KeyNumber[0])
+                //{
+                //    testNumber2 = testNumber; //.Convert(env2);
+                //    testNumber2 += charEnvironment.KeyNumber[1];
+                //}
 
-                    //primes.Clear();
+                primes.Clear();
 
-                    //using (StreamWriter sw = new StreamWriter(fs))
-                    //{
-                    //    sw.AutoFlush = true;
-                        Boolean stop = false;
+                //using (StreamWriter sw = new StreamWriter(fs))
+                //{
+                //    sw.AutoFlush = true;
+                Boolean stop = false;
                         while (!stop)
                         {
                             startTime = DateTime.Now;
-                            if (testNumber2.IsPrime())
+                            if (currentNumber.IsPrime())
                             {
-                                //String prime = testNumber2.ToString(env);
+                                String prime = currentNumber.GetActualValue();
                                 //sw.WriteLine(prime);
 
                                 TimeSpan span = DateTime.Now - startTime;
-                                //Console.WriteLine(prime);
+                                Console.WriteLine(prime);
                                 Console.WriteLine("Time:{0}", span);
                             }
-                            testNumber2 += charEnvironment.KeyNumber[1];
+                            currentNumber += charEnvironment.KeyNumber[1];
                         }
                     //}
                 //}
