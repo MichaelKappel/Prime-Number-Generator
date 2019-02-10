@@ -13,9 +13,4 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj" />
-    <ProjectReference Include="..\Prime-Number-Generator\Prime-Number-Generator.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -5,8 +5,4 @@
     <RootNamespace>Prime_Number_Generator</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj" />
-  </ItemGroup>
-
 </Project>
