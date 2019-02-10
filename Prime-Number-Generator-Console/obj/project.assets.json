@@ -686,8 +686,8 @@
     },
     "VariableBase.Mathematics/1.0.0": {
       "type": "project",
-      "path": "../../../../../git/Math/VariableBase.Mathematics/VariableBase.Mathematics/VariableBase.Mathematics.csproj",
-      "msbuildProject": "../../../../../git/Math/VariableBase.Mathematics/VariableBase.Mathematics/VariableBase.Mathematics.csproj"
+      "path": "../../Math/VariableBase.Mathematics/VariableBase.Mathematics/VariableBase.Mathematics.csproj",
+      "msbuildProject": "../../Math/VariableBase.Mathematics/VariableBase.Mathematics/VariableBase.Mathematics.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Micha\\Documents\\Prime-Number-Generator\\Prime-Number-Generator-Console\\Prime-Number-Generator-Console.csproj",
+      "projectUniqueName": "D:\\git\\Prime-Number-Generator\\Prime-Number-Generator-Console\\Prime-Number-Generator-Console.csproj",
       "projectName": "Prime-Number-Generator-Console",
-      "projectPath": "D:\\Users\\Micha\\Documents\\Prime-Number-Generator\\Prime-Number-Generator-Console\\Prime-Number-Generator-Console.csproj",
+      "projectPath": "D:\\git\\Prime-Number-Generator\\Prime-Number-Generator-Console\\Prime-Number-Generator-Console.csproj",
       "packagesPath": "C:\\Users\\Micha\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Micha\\Documents\\Prime-Number-Generator\\Prime-Number-Generator-Console\\obj\\",
+      "outputPath": "D:\\git\\Prime-Number-Generator\\Prime-Number-Generator-Console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
