@@ -57,7 +57,7 @@ namespace Prime_Number_Generator_Console
                 Console.WriteLine("Please Specify Primes Seed File");
                 Console.WriteLine("     Press ENTER to use Primes.p{0}", CurrentMathEnvironment.Base);
 
-                IList<String> SeedPrimes = new List<String>();
+                IList<String> seedPrimes = new List<String>();
 
                 var primesSeedFileCommand = Console.ReadLine();
                 if (primesSeedFileCommand == "")
@@ -77,13 +77,15 @@ namespace Prime_Number_Generator_Console
                     {
                         while (sr.Peek() >= 0)
                         {
-                            SeedPrimes.Add(sr.ReadLine());
+                            String primeRaw = sr.ReadLine();
+                            seedPrimes.Add(primeRaw);
+                            Console.WriteLine("{0} {1}", seedPrimes.Count, primeRaw);
                         }
                     }
                 }
+                seedPrimes = seedPrimes.Distinct().ToList();
 
-
-                Console.WriteLine("LOADED {0} Seed Primes ", SeedPrimes.Count);
+                Console.WriteLine("LOADED {0} Seed Primes ", seedPrimes.Count);
                 Console.WriteLine("Re-Check Seed Primes?");
                 Console.WriteLine("     Press ENTER to Skip");
 
@@ -96,7 +98,7 @@ namespace Prime_Number_Generator_Console
 
 
                     var badPrimes = new List<String>();
-                    Parallel.ForEach(SeedPrimes, new ParallelOptions() { MaxDegreeOfParallelism = -1 }, (String uncheckedPrime) =>
+                    Parallel.ForEach(seedPrimes, new ParallelOptions() { MaxDegreeOfParallelism = -1 }, (String uncheckedPrime) =>
                     {
                         if (!iterativePrimeAlgorithm.IsPrime(CurrentMathEnvironment, basicMath, CurrentMathEnvironment.ParseNumberSegments(uncheckedPrime)))
                         {
@@ -116,9 +118,13 @@ namespace Prime_Number_Generator_Console
                     Console.WriteLine(String.Format("{0} Bad Seed Primes Found", badPrimes.Count));
                 }
 
-                Console.WriteLine("Converting... {0} Seed Primes ", SeedPrimes.Count);
-                PrimeOperator.LoadSeedPrimes(SeedPrimes.Select(x => CurrentMathEnvironment.ParseNumberSegments(x)).ToList(), CurrentMathEnvironment, GetBasicMath());
-                Console.WriteLine("Converted {0} Seed Primes ", SeedPrimes.Count);
+                Console.WriteLine("Converting... {0} Seed Primes ", seedPrimes.Count);
+                PrimeOperator.LoadSeedPrimes(seedPrimes, CurrentMathEnvironment, GetBasicMath(),
+                    (Int32 percent, NumberSegments numberSegments) => {
+                        Console.WriteLine("{0}%  ", percent, CurrentMathEnvironment.ConvertToString(numberSegments));
+                    }
+                );
+                Console.WriteLine("Converted {0} Seed Primes ", seedPrimes.Count);
 
                 Console.WriteLine("Please Specify Primes Supplemental File");
                 Console.WriteLine("     Press ENTER to use Supplemental.p{0}", CurrentMathEnvironment.Base);
@@ -186,13 +192,13 @@ namespace Prime_Number_Generator_Console
                 Number firstNumber;
                 if (startWithCommand == "")
                 {
-                    if (SeedPrimes.Count() == 0)
+                    if (seedPrimes.Count() == 0)
                     {
                         firstNumber = CurrentMathEnvironment.SecondNumber;
                     }
                     else
                     {
-                        firstNumber = CurrentMathEnvironment.GetNumber(SeedPrimes[SeedPrimes.Count - 1]);
+                        firstNumber = CurrentMathEnvironment.GetNumber(seedPrimes[seedPrimes.Count - 1]);
                     }
                 }
                 else
@@ -324,7 +330,7 @@ namespace Prime_Number_Generator_Console
                     {
                         using (StreamWriter sw = new StreamWriter(fs))
                         {
-                            foreach (NumberSegments prime in PrimeOperator.PrimeNumbers)
+                            foreach (NumberSegments prime in PrimeOperator.PrimeNumbers.Distinct())
                             {
                                 sw.WriteLine(CurrentMathEnvironment.ConvertToString(prime));
                             }
