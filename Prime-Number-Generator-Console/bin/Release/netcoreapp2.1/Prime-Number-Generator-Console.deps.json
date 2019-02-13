@@ -869,6 +869,7 @@
       "VariableBase.Mathematics/1.0.0": {
         "dependencies": {
           "AzureStorageRepositories": "1.0.0",
+          "Common": "1.0.0",
           "FileRepositories": "1.0.0"
         },
         "runtime": {

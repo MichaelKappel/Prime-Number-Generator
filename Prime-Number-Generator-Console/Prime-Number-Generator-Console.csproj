@@ -14,10 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzureStorageRepositories\AzureStorageRepositories.csproj" />
-    <ProjectReference Include="..\Common\Common.csproj" />
-    <ProjectReference Include="..\FileRepositories\FileRepositories.csproj" />
-    <ProjectReference Include="..\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj" />
+    <ProjectReference Include="..\..\Math\AzureStorageRepositories\AzureStorageRepositories.csproj" />
+    <ProjectReference Include="..\..\Math\Common\Common.csproj" />
+    <ProjectReference Include="..\..\Math\FileRepositories\FileRepositories.csproj" />
+    <ProjectReference Include="..\..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj" />
   </ItemGroup>
 
 </Project>

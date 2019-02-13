@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prime-Number-Generator-Console", "Prime-Number-Generator-Console\Prime-Number-Generator-Console.csproj", "{908291A9-EEE8-4406-9788-819235787DAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariableBase.Mathematics", "..\..\..\..\git\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj", "{410A0354-2A20-4D5B-B3A1-5A0EB56654BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariableBase.Mathematics", "..\Math\VariableBase.Mathematics\VariableBase.Mathematics\VariableBase.Mathematics.csproj", "{410A0354-2A20-4D5B-B3A1-5A0EB56654BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Math\Common\Common.csproj", "{D0713F64-3B40-475C-997B-720233D7704A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureStorageRepositories", "..\Math\AzureStorageRepositories\AzureStorageRepositories.csproj", "{8B273062-37D5-498E-8D36-0CECFC455670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileRepositories", "..\Math\FileRepositories\FileRepositories.csproj", "{22E245AF-34D3-42A2-AC25-30FE4CA6AFFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{410A0354-2A20-4D5B-B3A1-5A0EB56654BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410A0354-2A20-4D5B-B3A1-5A0EB56654BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410A0354-2A20-4D5B-B3A1-5A0EB56654BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0713F64-3B40-475C-997B-720233D7704A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0713F64-3B40-475C-997B-720233D7704A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0713F64-3B40-475C-997B-720233D7704A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0713F64-3B40-475C-997B-720233D7704A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B273062-37D5-498E-8D36-0CECFC455670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B273062-37D5-498E-8D36-0CECFC455670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B273062-37D5-498E-8D36-0CECFC455670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B273062-37D5-498E-8D36-0CECFC455670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E245AF-34D3-42A2-AC25-30FE4CA6AFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E245AF-34D3-42A2-AC25-30FE4CA6AFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E245AF-34D3-42A2-AC25-30FE4CA6AFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E245AF-34D3-42A2-AC25-30FE4CA6AFFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
